@@ -21,9 +21,7 @@
 	letter-spacing: .04rem;
 
 	&:hover {
-		background-color: transparent;
-		color: $accent-color;
-		border: .2rem solid $accent-color;
+		opacity: .85;
 		transition: all .5s ease;
 	}
 }
