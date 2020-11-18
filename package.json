@@ -1,7 +1,7 @@
 {
-  "name": "natours",
+  "name": "MkTech",
   "version": "1.0.0",
-  "description": "LP for natours",
+  "description": "LP for MkTech",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
