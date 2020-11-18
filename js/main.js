@@ -1,18 +1,6 @@
-// Script for searching elem that is broken
-// let docWidth = document.documentElement.offsetWidth;
-
-// [].forEach.call(
-//   document.querySelectorAll('*'),
-//   function(el) {
-//     if (el.offsetWidth > docWidth || el.parentElement && el.offsetWidth > el.parentElement.offsetWidth) {
-//       console.log(el);
-//     }
-//   }
-// );
-
 // Smooth transition for the sections
 
-const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
+const anchors = [].slice.call(document.querySelectorAll('a.nav-link')),
       animationTime = 900,
       framesCount = 60;
 
