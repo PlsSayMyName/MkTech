@@ -1,0 +1,417 @@
+.hero {
+	.slider {
+		position: relative;
+
+		&-img {
+			min-height: 65rem;
+		}
+
+		&-content	{
+			position: absolute;
+			top: 25%;
+			left: 18.95%;
+
+			.btn {
+				margin-top: 5rem;
+				margin-left: -0.1rem;
+			}
+		}
+
+		&-title {
+			@include h1;
+			margin-bottom: 1.9rem;
+			letter-spacing: .03rem;
+			max-width: 54rem;
+		}
+
+		&-subtitle {
+			@include main-text;
+			max-width: 47rem;
+		}
+
+		.carousel-control-prev-icon {
+			background-image: url(../img/icons/arrow-left.svg);
+		}
+
+		.carousel-control-prev {
+			top: 78.5%;
+			left: 20.7%;
+			width: 2rem;
+			height: 2rem;
+		}
+
+		.carousel-control-next-icon {
+			background-image: url(../img/icons/arrow-left.svg);
+			transform: rotate(180deg);
+			width: 2rem;
+			height: 2rem;
+		}
+
+		.carousel-control-next {
+			width: 2rem;
+			height: 2rem;
+			top: 78.5%;
+			left: 23.9%;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.hero {
+		.slider {
+
+
+			&-img {
+				min-height: unset;
+			}
+
+			&-content	{
+				top: 15%;
+
+				.btn {
+					margin-top: 1.5rem;
+					font-size: 1.2rem;
+				}
+			}
+
+			&-title {
+				line-height: 2rem;
+				margin-bottom: 1rem;
+				font-size: 2.5rem;
+				min-width: 45rem;
+			}
+
+			&-subtitle {
+				line-height: 2rem;
+				font-size: 1.5rem;
+			}
+
+			.carousel-control-prev-icon {
+
+			}
+
+			.carousel-control-prev {
+				top: 86.5%;
+			}
+
+			.carousel-control-next-icon {
+			}
+
+			.carousel-control-next {
+				top: 86.5%;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.hero {
+		.slider {
+
+
+			&-img {
+				min-height: unset;
+			}
+
+			&-content	{
+				top: 15%;
+
+				.btn {
+					margin-top: 1.5rem;
+					font-size: 1.2rem;
+				}
+			}
+
+			&-title {
+				line-height: 2rem;
+				margin-bottom: 1rem;
+				font-size: 2.5rem;
+				min-width: 45rem;
+			}
+
+			&-subtitle {
+				line-height: 2rem;
+				font-size: 1.5rem;
+			}
+
+			.carousel-control-prev-icon {
+
+			}
+
+			.carousel-control-prev {
+				top: 42.5%;
+				left: 0;
+			}
+
+			.carousel-control-next-icon {
+			}
+
+			.carousel-control-next {
+				top: 42.5%;
+				left: 96.9%;
+
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.hero {
+		.slider {
+
+
+			&-img {
+				min-height: unset;
+			}
+
+			&-content	{
+				top: 6%;
+
+				.btn {
+					margin-top: 0.5rem;
+					font-size: 1rem;
+					padding: 0 3rem;
+				}
+			}
+
+			&-title {
+				line-height: 2rem;
+				margin-bottom: 1rem;
+				font-size: 1.3rem;
+				min-width: 37rem;
+			}
+
+			&-subtitle {
+				line-height: 1.5rem;
+				font-size: 1.3rem;
+				min-width: 18rem;
+			}
+
+			.carousel-control-prev-icon {
+
+			}
+
+			.carousel-control-prev {
+				top: 42.5%;
+				left: 0;
+			}
+
+			.carousel-control-next-icon {
+			}
+
+			.carousel-control-next {
+				top: 42.5%;
+				left: 96.9%;
+
+			}
+		}
+	}
+}
+
+.main-activities-slider {
+
+	.slider-wrapper {
+		margin-left: 1.5rem;
+		margin-top: -1rem;
+		position: relative;
+
+		.carousel-control-prev-icon {
+			background-image: url(../img/icons/arrow-left.svg);
+			width: 2rem;
+			height: 3rem;
+		}
+
+		.carousel-control-next-icon {
+			background-image: url(../img/icons/arrow-left.svg);
+			transform: rotate(180deg);
+			width: 2rem;
+			height: 3rem;
+		}
+
+		.carousel-control-prev {
+			left: -14rem;
+		}
+
+		.carousel-control-next {
+			right: -14rem;
+		}
+	}
+}
+
+	@media only screen and (min-width: 992px) and (max-width: 1199px) {
+		.main-activities-slider {
+			.slider-wrapper {
+
+				.carousel-control-prev {
+					left: 0;
+				}
+
+				.carousel-control-next {
+					right: 0;
+				}
+		}
+	}
+}
+
+	@media only screen and (min-width: 768px) and (max-width: 991px) {
+		.main-activities-slider {
+			.slider-wrapper {
+
+				.carousel-control-prev {
+					left: 0;
+				}
+
+				.carousel-control-next {
+					right: 0;
+				}
+		}
+	}
+}
+
+	@media only screen and (min-width: 576px) and (max-width: 767px) {
+		.main-activities-slider {
+			.slider-wrapper {
+
+				.carousel-control-prev {
+					left: 0;
+				}
+
+				.carousel-control-next {
+					right: 0;
+				}
+		}
+	}
+}
+
+	@media (max-width: 575px) {
+		.main-activities-slider {
+			.slider-wrapper {
+
+				.carousel-control-prev {
+					left: 0;
+				}
+
+				.carousel-control-next {
+					right: 0;
+				}
+		}
+	}
+}
+
+
+.reviews {
+
+	&-slider-wrapper {
+
+		.carousel-indicators {
+			bottom: -7.5rem;
+			margin-right: 13.55%;
+
+			> li {
+				width: 1rem;
+				height: 1rem;
+				border-radius: 100%;
+				background-color: $inactive-color;
+				margin-right: 1rem;
+				margin-left: 0;
+			}
+
+			> .active {
+				background-color: $accent-color;
+			}
+		}
+
+		.carousel-inner {
+			overflow: visible;
+		}
+
+		.carousel-control-prev {
+			right: 9.8rem;
+			bottom: -5.8rem;
+			width: 1rem;
+			top: unset;
+			left: unset;
+		}
+
+		.carousel-control-next {
+			bottom: -5.8rem;
+			right: 3.6rem;
+			width: 1rem;
+			top: unset;
+		}
+
+		.carousel-control-prev-icon {
+			background-image: url(../img/icons/arrow-left.svg);
+			width: 1rem;
+			height: 1.8rem;
+			color: $text-secondary;
+		}
+
+		.carousel-control-next-icon {
+			background-image: url(../img/icons/arrow-left.svg);
+			transform: rotate(180deg);
+			width: 1rem;
+			height: 1.8rem;
+			color: $text-secondary
+		}
+
+		.btn {
+			margin-top: 3rem;
+			margin-left: 2rem;
+		}
+	}
+
+	&-slider-item {
+		margin-left: 1.8rem;
+		margin-right: 1rem;
+
+		.card {
+			border: none;
+			box-shadow: $main-effect;
+			&-body {
+				padding: 4rem 5rem 6.5rem;
+
+				> .button {
+					margin-top: 2.5rem;
+					max-width: 9.4rem;
+				}
+			}
+
+			&-img-top {
+				border-radius: 0;
+				max-width: 57rem;
+			}
+
+			&-title {
+				display: block;
+				margin-bottom: 2rem;
+
+				&-position {
+					@include main-text;
+					font-weight: 400;
+					color: $dark-secondary;
+				}
+
+				&-name {
+					@include h3;
+					color: $accent-color;
+					letter-spacing: .02rem;
+				}
+			}
+
+			&-text {
+				@include secondary-text;
+				color: $main-text-color;
+				letter-spacing: .015rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 575px) {
+	.reviews {
+		.carousel-indicators{
+			left: 30%;
+		}
+	}
+}

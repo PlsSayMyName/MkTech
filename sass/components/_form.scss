@@ -1,0 +1,53 @@
+.cooperation-form {
+	padding: 4rem 2rem 4rem 5rem;
+	background-color: $main-light;
+	margin-left: 1.3rem;
+	margin-right: -2.8rem;
+	box-shadow: $additional-effect;
+
+	.form {
+
+		// &-group {
+		// 	margin-bottom: .5rem;
+		// }
+
+		&-group:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+
+		&-label {
+			@include caption-text;
+			color: $text-secondary;
+		}
+
+		&-input {
+			@include main-text;
+			border: none;
+			border-bottom: .1rem solid $detail-color;
+			width: 94%;
+			outline: none;
+			padding: .5rem 1rem;
+		}
+
+		&-attention {
+			@include additional-text;
+			color: $text-secondary;
+
+			> a {
+				font-family: $lato-semibold;
+				font-weight: 700;
+				font-size: 1.3rem;
+				line-height: 2rem;
+				text-decoration: underline;
+				color: $text-secondary;
+			}
+		}
+
+		&-button {
+			margin-top: 1rem;
+			width: 94%;
+			letter-spacing: .15rem;
+			padding: .65rem 5.55rem 0.65rem 5rem;
+		}
+	}
+}

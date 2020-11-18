@@ -1,0 +1,29 @@
+.btn {
+	@include button-text-main;
+	background-color: $accent-color;
+	padding: .65rem 5.55rem;
+	border-radius: .2rem;
+	color: $main-light;
+	letter-spacing: .05rem;
+	border: none;
+
+	&:hover {
+		background-color: transparent;
+		color: $accent-color;
+		border: .2rem solid $accent-color;
+		transition: all .5s ease;
+	}
+}
+
+.button {
+	@include button-text-secondary;
+	color: $text-secondary;
+	letter-spacing: .04rem;
+
+	&:hover {
+		background-color: transparent;
+		color: $accent-color;
+		border: .2rem solid $accent-color;
+		transition: all .5s ease;
+	}
+}

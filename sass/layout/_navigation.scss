@@ -1,0 +1,48 @@
+.navbar {
+	padding: 2.2rem 0rem 0rem 0.8rem;
+	width: 100%;
+
+	&-toggler {
+		background-image: url(../img/icons/menu.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 4rem;
+		height: 4rem;
+	}
+
+	&-brand {
+		margin-right: 2.5rem;
+		margin-left: -1.5rem;
+	}
+
+	&-nav {
+		align-items: center;
+	}
+
+	.nav-link {
+		@include caption-text;
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		padding: 0 !important;
+		letter-spacing: .05rem;
+
+		&:hover {
+			opacity: .7;
+			transition: all .5s ease;
+		}
+	}
+
+	.nav-item:not(:nth-child(7))	{
+		padding-right: 4.97rem;
+	}
+
+	.collapse {
+		min-width: 74rem;
+		padding: 0 0 .8rem 0;
+	}
+
+	.search {
+		background-color: transparent;
+		border: none;
+	}
+}

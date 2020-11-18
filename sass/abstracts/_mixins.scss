@@ -1,0 +1,237 @@
+// HEADLINES
+@mixin h1 {
+	font: {
+		family: Commissioner;
+		size: 4rem;
+		weight: 400;
+	}
+	line-height: 5rem;
+	color: $title-color;
+}
+
+@mixin h2 {
+	font: {
+		family: Commissioner;
+		size: 2.8rem;
+		weight: 400;
+	}
+	line-height: 4rem;
+	letter-spacing: .08rem;
+	color: $title-color;
+}
+
+@mixin h3 {
+	font: {
+		family: Commissioner;
+		size: 2.6rem;
+		weight: 700;
+	}
+	line-height: 4rem;
+	color: $title-color;
+}
+
+@mixin h4 {
+	font: {
+		family: Commissioner;
+		size: 2.6rem;
+		weight: 400;
+	}
+	line-height: 4.5rem;
+	color: $title-color;
+}
+
+@mixin h5 {
+	font: {
+		family: Commissioner;
+		size: 2rem;
+		weight: 400;
+	}
+	line-height: 3rem;
+	color: $title-color;
+}
+
+@mixin h6 {
+	font: {
+		family: Commissioner;
+		size: 1.8rem;
+		weight: 400;
+	}
+	line-height: 4rem;
+	color: $title-color;
+}
+
+// SUBTITLES
+
+@mixin subtitle-1 {
+	font: {
+		family: Lato;
+		size: 1.7rem;
+		weight: 600;
+	}
+	line-height: 3rem;
+	color: $subtitle-color;
+}
+
+@mixin subtitle-2 {
+	font: {
+		family: Lato;
+		size: 1.6rem;
+		weight: 400;
+	}
+	line-height: 3rem;
+	color: $subtitle-color;
+}
+
+// TEXTS
+
+@mixin main-text {
+	font: {
+		family: Lato;
+		size: 1.5rem;
+		weight: 300;
+	}
+	line-height: 2.5rem;
+	color: $main-text-color;
+}
+
+@mixin secondary-text {
+	font: {
+		family: Lato;
+		size: 1.4rem;
+		weight: 300;
+	}
+	line-height: 2.5rem;
+	color: $main-text-color;
+}
+
+@mixin additional-text {
+	font: {
+		family: Lato;
+		size: 1.3rem;
+		weight: 300;
+	}
+	line-height: 2rem;
+	color: $main-text-color;
+}
+
+@mixin button-text-main {
+	font: {
+		family: Commissioner;
+		size: 1.3rem;
+		weight: 700;
+	}
+	line-height: 3rem;
+	text-transform: uppercase;
+}
+
+@mixin button-text-secondary {
+	font: {
+		family: Lato;
+		size: 1.2rem;
+		weight: 600;
+	}
+	line-height: 2rem;
+	text-transform: uppercase;
+}
+
+@mixin caption-text {
+	font: {
+		family: Commissioner;
+		size: 1.3rem;
+		weight: 500;
+	}
+	line-height: 2rem;
+	color: $subtitle-color;
+}
+
+@mixin overline-text {
+	font: {
+		family: Commissioner;
+		size: 1.4rem;
+		weight: 400;
+	}
+	line-height: 2rem;
+	color: $text-secondary;
+}
+
+// TRIANGLE MIXIN
+
+@mixin triangle {
+	::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 7rem 7rem 0;
+		border-color: transparent $accent-color transparent transparent;
+	}
+}
+
+// 4 CARD ROW
+
+@mixin card-4 {
+	.card {
+		padding: 5rem 5.5rem 5.9rem 5rem;
+		box-shadow: $main-effect;
+		margin-left: .8rem;
+		margin-right: -.9rem;
+		min-width: 26rem;
+		max-height: 28.5rem;
+		border: none;
+		transition: transform .3s, -webkit-transform .3s;
+
+		&-icon {
+			margin: 0 auto;
+			padding: 2.7rem;
+			border: .3rem solid $detail-color;
+			display: inline-block;
+			margin-bottom: 2.4rem;
+		}
+
+		&-title {
+			@include subtitle-2;
+			line-height: 2.5rem;
+			letter-spacing: .01rem;
+			display: block;
+			min-width: 25rem;
+			padding: 0rem 1.3rem 0rem .1rem;
+			margin: 0rem -5rem 1rem -3.8rem;
+		}
+
+		&:hover {
+			transform: translateY(-1.5rem) scale(1.03);
+			transition: transform .3s;
+		}
+	}
+}
+
+@mixin full-card {
+.full-card {
+	max-height: 18.5rem;
+	padding: 4rem 5rem 1rem;
+	margin-left: -0.7rem;
+	margin-right: -2.3rem;
+	transition: transform .3s, -webkit-transform .3s;
+
+	.card-title {
+		min-width: 25rem;
+		margin: -.5rem 10rem 0rem -3rem;
+	}
+
+	.card-body {
+		margin: -4rem -6rem 4rem -2rem;
+	}
+
+	.card-text {
+			@include main-text;
+		}
+
+		&:hover {
+			transform: translateY(-1.5rem) scale(1.03);
+			transition: transform .3s;
+		}
+	}
+}
