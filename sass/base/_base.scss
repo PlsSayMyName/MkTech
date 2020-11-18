@@ -19,8 +19,8 @@ body {
 	background-color: $main-light;
 }
 
-.box-shadow {
-	box-shadow: $additional-effect;
+.additional-shadow {
+	@include additional-shadow;
 }
 
 .no-gutters {

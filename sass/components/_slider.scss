@@ -367,7 +367,7 @@
 
 		.card {
 			border: none;
-			box-shadow: $main-effect;
+			@include main-shadow;
 			&-body {
 				padding: 4rem 5rem 6.5rem;
 

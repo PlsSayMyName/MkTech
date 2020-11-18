@@ -154,6 +154,19 @@
 	color: $text-secondary;
 }
 
+// SHADOW MIXIN
+
+@mixin additional-shadow {
+	box-shadow: 0 .4rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+@mixin underlying-shadow {
+	box-shadow: inset 0 2rem 5rem rgba(0, 0, 0, 0.15);;
+}
+
+@mixin main-shadow {
+	box-shadow: 0 .4rem 2rem rgba(0, 0, 0, 0.08);;
+}
 // TRIANGLE MIXIN
 
 @mixin triangle {
@@ -175,7 +188,7 @@
 @mixin card-4 {
 	.card {
 		padding: 5rem 5.5rem 5.9rem 5rem;
-		box-shadow: $main-effect;
+		@include main-shadow;
 		margin-left: .8rem;
 		margin-right: -.9rem;
 		min-width: 26rem;

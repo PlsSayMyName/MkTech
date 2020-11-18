@@ -3,7 +3,7 @@
 	background-color: $main-light;
 	margin-left: 1.3rem;
 	margin-right: -2.8rem;
-	box-shadow: $additional-effect;
+	@include additional-shadow;
 
 	.form {
 

@@ -441,7 +441,7 @@
 
 
 	.card {
-		box-shadow: $additional-effect;
+		@include additional-shadow;
 		border: none;
 		border-radius: 0;
 
