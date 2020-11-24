@@ -3,7 +3,7 @@
 		position: relative;
 
 		&-img {
-			min-height: 65rem;
+			// min-height: 65rem;
 		}
 
 		&-content	{
@@ -52,6 +52,49 @@
 			height: 2rem;
 			top: 78.5%;
 			left: 23.9%;
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.hero {
+		.slider {
+
+			&-content	{
+				top: 15%;
+
+				.btn {
+					margin-top: 1.5rem;
+					font-size: 1.2rem;
+				}
+			}
+
+			&-title {
+				line-height: 2rem;
+				margin-bottom: 1rem;
+				font-size: 2.5rem;
+				min-width: 45rem;
+			}
+
+			&-subtitle {
+				line-height: 2rem;
+				font-size: 1.5rem;
+			}
+
+			.carousel-control-prev-icon {
+
+			}
+
+			.carousel-control-prev {
+				top: 65.5%;
+			}
+
+			.carousel-control-next-icon {
+			}
+
+			.carousel-control-next {
+				top: 65.5%;
+			}
 		}
 	}
 }
@@ -108,11 +151,6 @@
 	.hero {
 		.slider {
 
-
-			&-img {
-				min-height: unset;
-			}
-
 			&-content	{
 				top: 15%;
 
@@ -159,11 +197,6 @@
 	.hero {
 		.slider {
 
-
-			&-img {
-				min-height: unset;
-			}
-
 			&-content	{
 				top: 6%;
 
@@ -187,16 +220,9 @@
 				min-width: 18rem;
 			}
 
-			.carousel-control-prev-icon {
-
-			}
-
 			.carousel-control-prev {
 				top: 42.5%;
 				left: 0;
-			}
-
-			.carousel-control-next-icon {
 			}
 
 			.carousel-control-next {
