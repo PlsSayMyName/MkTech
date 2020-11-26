@@ -1,9 +1,7 @@
-@import "variables";
-
 // HEADLINES
 @mixin h1 {
 	font: {
-		family: 'Commissioner';
+		family: $commissioner-regular;
 		size: 4rem;
 		weight: 400;
 	}
@@ -13,7 +11,7 @@
 
 @mixin h2 {
 	font: {
-		family: 'Commissioner';
+		family: $commissioner-regular;
 		size: 2.8rem;
 		weight: 400;
 	}
@@ -24,7 +22,7 @@
 
 @mixin h3 {
 	font: {
-		family: 'Commissioner';
+		family: $commissioner-bold;
 		size: 2.6rem;
 		weight: 700;
 	}
@@ -34,7 +32,7 @@
 
 @mixin h4 {
 	font: {
-		family: 'Commissioner';
+		family: $commissioner-regular;
 		size: 2.6rem;
 		weight: 400;
 	}
@@ -44,7 +42,7 @@
 
 @mixin h5 {
 	font: {
-		family: 'Commissioner';
+		family: $commissioner-regular;
 		size: 2rem;
 		weight: 400;
 	}
@@ -54,7 +52,7 @@
 
 @mixin h6 {
 	font: {
-		family: 'Commissioner';
+		family: $commissioner-regular;
 		size: 1.8rem;
 		weight: 400;
 	}
@@ -66,7 +64,7 @@
 
 @mixin subtitle-1 {
 	font: {
-		family: 'Lato';
+		family: $lato-semibold;
 		size: 1.7rem;
 		weight: 600;
 	}
@@ -76,7 +74,7 @@
 
 @mixin subtitle-2 {
 	font: {
-		family: 'Lato';
+		family: $lato-regular;
 		size: 1.6rem;
 		weight: 400;
 	}
@@ -88,7 +86,7 @@
 
 @mixin main-text {
 	font: {
-		family: 'Lato';
+		family: $lato-light;
 		size: 1.5rem;
 		weight: 300;
 	}
@@ -98,7 +96,7 @@
 
 @mixin secondary-text {
 	font: {
-		family: 'Lato';
+		family: $lato-light;
 		size: 1.4rem;
 		weight: 300;
 	}
@@ -108,7 +106,7 @@
 
 @mixin additional-text {
 	font: {
-		family: 'Lato';
+		family: $lato-light;
 		size: 1.3rem;
 		weight: 300;
 	}
@@ -118,7 +116,7 @@
 
 @mixin button-text-main {
 	font: {
-		family: 'Commissioner';
+		family: $commissioner-bold;
 		size: 1.3rem;
 		weight: 700;
 	}
@@ -128,7 +126,7 @@
 
 @mixin button-text-secondary {
 	font: {
-		family: 'Lato';
+		family: $lato-semibold;
 		size: 1.2rem;
 		weight: 600;
 	}
@@ -138,7 +136,7 @@
 
 @mixin caption-text {
 	font: {
-		family: 'Commissioner';
+		family: $commissioner-medium;
 		size: 1.3rem;
 		weight: 500;
 	}
@@ -148,7 +146,7 @@
 
 @mixin overline-text {
 	font: {
-		family: 'Commissioner';
+		family: $commissioner-regular;
 		size: 1.4rem;
 		weight: 400;
 	}
